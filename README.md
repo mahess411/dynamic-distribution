@@ -33,3 +33,19 @@ if __name__ == '__main__':
         
     for result in results:
         print(result)
+
+3. Penjelasan Tugas
+multiprocessing.Pool: Berfungsi sebagai scheduler pusat. Pool ini membuat sejumlah proses (worker) yang siap menerima tugas.
+
+pool.map: Merupakan inti dari distribusi dinamis. Fungsi ini membagi antrean tugas ke setiap worker yang tersedia. Jika satu worker selesai lebih cepat karena tugas yang ia terima lebih ringan, worker tersebut akan langsung mengambil tugas berikutnya dari antrean tanpa menunggu worker lain.
+
+Waktu Optimal: Metode ini menjamin waktu penyelesaian total menjadi optimal karena tidak ada prosesor yang menganggur (idle) selama masih ada tugas dalam antrean.
+
+4. Hasil Eksekusi
+(Lampirkan screenshot output terminal Anda di sini)
+Contoh output:
+
+Plaintext
+Tugas 0 selesai dalam 0.23 detik
+Tugas 1 selesai dalam 0.45 detik
+...
