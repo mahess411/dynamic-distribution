@@ -34,7 +34,7 @@ if __name__ == '__main__':
     for result in results:
         print(result)
 
-3. Penjelasan Tugas
+## 3. Penjelasan Tugas
 multiprocessing.Pool: Berfungsi sebagai scheduler pusat. Pool ini membuat sejumlah proses (worker) yang siap menerima tugas.
 
 pool.map: Merupakan inti dari distribusi dinamis. Fungsi ini membagi antrean tugas ke setiap worker yang tersedia. Jika satu worker selesai lebih cepat karena tugas yang ia terima lebih ringan, worker tersebut akan langsung mengambil tugas berikutnya dari antrean tanpa menunggu worker lain.
